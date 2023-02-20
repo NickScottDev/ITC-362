@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.scott.msu.geoquiz'
+    namespace 'com.scott.msu.geoquiz2'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.scott.msu.geoquiz"
+        applicationId 'com.scott.msu.geoquiz2'
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
+    buildToolsVersion '33.0.1'
 }
 
 dependencies {
